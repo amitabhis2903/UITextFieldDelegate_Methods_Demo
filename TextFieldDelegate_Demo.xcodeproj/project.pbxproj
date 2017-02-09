@@ -12,6 +12,8 @@
 		119ED7EC1E4C4CA600FEB8E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 119ED7EA1E4C4CA600FEB8E2 /* Main.storyboard */; };
 		119ED7EE1E4C4CA600FEB8E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 119ED7ED1E4C4CA600FEB8E2 /* Assets.xcassets */; };
 		119ED7F11E4C4CA600FEB8E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 119ED7EF1E4C4CA600FEB8E2 /* LaunchScreen.storyboard */; };
+		119ED7FB1E4C5E4300FEB8E2 /* ColorizeTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119ED7FA1E4C5E4300FEB8E2 /* ColorizeTextFieldDelegate.swift */; };
+		119ED7FE1E4C81F500FEB8E2 /* emojiDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119ED7FD1E4C81F500FEB8E2 /* emojiDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		119ED7ED1E4C4CA600FEB8E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		119ED7F01E4C4CA600FEB8E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		119ED7F21E4C4CA600FEB8E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		119ED7FA1E4C5E4300FEB8E2 /* ColorizeTextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorizeTextFieldDelegate.swift; sourceTree = "<group>"; };
+		119ED7FD1E4C81F500FEB8E2 /* emojiDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = emojiDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +60,22 @@
 			children = (
 				119ED7E61E4C4CA600FEB8E2 /* AppDelegate.swift */,
 				119ED7E81E4C4CA600FEB8E2 /* ViewController.swift */,
+				119ED7FC1E4C5E5500FEB8E2 /* TextFieldDelegat */,
 				119ED7EA1E4C4CA600FEB8E2 /* Main.storyboard */,
 				119ED7ED1E4C4CA600FEB8E2 /* Assets.xcassets */,
 				119ED7EF1E4C4CA600FEB8E2 /* LaunchScreen.storyboard */,
 				119ED7F21E4C4CA600FEB8E2 /* Info.plist */,
 			);
 			path = TextFieldDelegate_Demo;
+			sourceTree = "<group>";
+		};
+		119ED7FC1E4C5E5500FEB8E2 /* TextFieldDelegat */ = {
+			isa = PBXGroup;
+			children = (
+				119ED7FA1E4C5E4300FEB8E2 /* ColorizeTextFieldDelegate.swift */,
+				119ED7FD1E4C81F500FEB8E2 /* emojiDelegate.swift */,
+			);
+			name = TextFieldDelegat;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +110,7 @@
 				TargetAttributes = {
 					119ED7E21E4C4CA500FEB8E2 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = C2WZ997HDM;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -136,6 +151,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				119ED7FE1E4C81F500FEB8E2 /* emojiDelegate.swift in Sources */,
+				119ED7FB1E4C5E4300FEB8E2 /* ColorizeTextFieldDelegate.swift in Sources */,
 				119ED7E91E4C4CA600FEB8E2 /* ViewController.swift in Sources */,
 				119ED7E71E4C4CA600FEB8E2 /* AppDelegate.swift in Sources */,
 			);
@@ -260,6 +277,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = C2WZ997HDM;
 				INFOPLIST_FILE = TextFieldDelegate_Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ammy.pandey.TextFieldDelegate-Demo";
@@ -272,6 +290,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = C2WZ997HDM;
 				INFOPLIST_FILE = TextFieldDelegate_Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ammy.pandey.TextFieldDelegate-Demo";
